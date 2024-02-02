@@ -1,2 +1,40 @@
-/*hej*/
-/*f*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+  display: grid;
+}
+
+header{
+  min-height: 6.6vh;
+  background-color: #779882;
+}
+
+main{
+  height: 80vh;
+  background-color: aliceblue;
+}
+
+.forside-top img{
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1.9/1;
+}
+.forside-top div{
+  height: 11vh;
+  background-color: #779882;
+  position: absolute;
+  top: 450px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 2vh;
+}
+
+footer{
+  height: 10vh;
+  background-color: silver;
+}
