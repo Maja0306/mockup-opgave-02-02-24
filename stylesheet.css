@@ -1,40 +1,122 @@
 *{
   box-sizing: border-box;
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
 }
-
+p{
+  font-size: 1.2em;
+}
+h1{
+  margin-bottom: 0.2em;
+}
 body{
   display: grid;
 }
-
-header{
+.flex-container-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.knap{
+  background-color: #779882;
+  color: white;
+  text-align: center;
+  border-radius: 15px;
+  width: 50%;
+}
+.knap p{
+  padding: 1em 1em 0 1em;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding:1em;
   min-height: 6.6vh;
   background-color: #779882;
 }
-
+.fa-solid{
+  font-size: 2.5em;
+}
+.sprog-top{
+  display: flex;
+  flex-direction: row-reverse;
+  height: 2em;
+  background-color: white;
+  padding-right: 1em;
+  padding-top: 0.5em;
+}
+.sprog-top p{
+  color: #858585;
+  font-size: 15px;
+  padding: 0 3px;
+}
+.sprog-top p:hover{
+  cursor: pointer;
+}
 main{
-  height: 200vh;
   background-color: aliceblue;
 }
-
-.forside-top img{
-  width: 100%;
-  object-fit: cover;
-  aspect-ratio: 1.9/1;
+.forside-top-img {
+  height: 50vh;
+}
+.forside-top-img div{
+  min-height: 80vh;
+  background-image: url(img/banner-billede.jpg);
+  background-size: cover;
 }
 .forside-top div{
   height: 11vh;
   background-color: #779882;
-  position: absolute;
-  top: 450px;
   width: 100%;
   color: white;
   text-align: center;
   padding: 2vh;
 }
 
+.forside-intro{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #f3f4ef;
+  padding: 2em;
+}
+.tekst{
+  color: #3c3c3c;
+  padding-right: 3em;
+}
+.tekst h1, p{
+  margin-bottom: 1.2em;
+  line-height: 1.5em;
+}
+.kontaktform{
+  background-color: #425348;
+  border-radius: 50px;
+  margin: 2em 0;
+  padding: 3em;
+}
+.kontaktform h1{
+  color: white;
+}
+.kontaktform input{
+  border-radius: 10px;
+  height: 4em;
+  width: 100%;
+  margin-bottom: 1em;
+}
+.fællesskab{
+  background-color: rgb(251, 251, 251);
+  padding: 2em 6em;
+  color: #3c3c3c;
+}
+.fællesskab h1{
+  margin-bottom: 1em;
+  text-align: center;
+}
 footer{
-  height: 10vh;
-  background-color: silver;
+  height: 12vh;
+  display: flex;
+  justify-content: space-around;
+  background-color: #425348;
+  padding-top: 1.5em;
+  color: white;
 }
